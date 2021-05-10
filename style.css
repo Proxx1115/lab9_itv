@@ -1,0 +1,296 @@
+/* Udsen styliin heseg */
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1500px;
+  margin: auto;
+  overflow: hidden;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+body {
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+}
+img {
+  width: 100%;
+}
+.image {
+  transition: transform 1s;
+}
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* Utility classuud */
+.marg {
+  margin-top: 1.2rem;
+}
+.text-center {
+  text-align: center;
+}
+.btn-no-back {
+  display: inline;
+  border-bottom: 4px solid #132853;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.5s ease-in;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background: #3b5998;
+  transition: background 0.5s ease-in;
+  border-radius: 50px;
+  width: 30%;
+}
+.btn:hover {
+  background: #132853;
+}
+.btn-no-back:hover {
+  color: #13203b;
+}
+
+/* navbar heseg */
+#main-header {
+  padding: 2rem 4rem;
+  background-color: #3b5998;
+  margin-bottom: 1rem;
+}
+#main-header .head {
+  display: flex;
+  justify-content: space-between;
+}
+#main-header .logo {
+  color: #fff;
+  font-size: 2rem;
+}
+#main-header .social-icon {
+  color: #fff;
+}
+#main-header .social-icon ul a {
+  transition: color 1s;
+}
+#main-header .social-icon ul a:hover {
+  color: #13203b;
+}
+#main-header ul {
+  display: flex;
+}
+#main-header ul li {
+  margin-right: 2rem;
+  list-style: none;
+}
+
+/* Undsen contentiin heseg */
+#img-content .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+#img-content .price .ice-price {
+  margin: 0 2rem;
+  background: #f4f4f4;
+  width: 15rem;
+  padding: 0 3rem;
+  border: #333 3px solid;
+  color: #132853;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+#img-content .price .sumPrice {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0;
+  padding: 0.5rem 0;
+  width: 15%;
+}
+#img-content .lg-btn {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0;
+  padding: 0.5rem 0;
+  width: 15%;
+}
+.contents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  box-shadow: 3px 3px 3px 3px #3b5998;
+  margin-bottom: 1rem;
+}
+.main .Text-content .text ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.Text-content {
+  padding: 2rem;
+  margin-right: 2rem;
+}
+.Text-content .text ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Text-content .text ul li {
+  list-style: none;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #132853;
+  border-bottom: 1px solid #ccc;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  background: #3b5998;
+  overflow: hidden;
+}
+
+.content:hover .image {
+  transform: scale(1.5);
+}
+.order {
+  display: flex;
+  justify-content: center;
+}
+/* overlay effect heseg */
+.content::after {
+  content: "";
+  position: absolute;
+  background: inherit;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  transform: scale(2) translateX(-100%) translateY(-100%) rotate(-5deg);
+  transition: transform 0.5s ease-in-out;
+}
+.content:hover::after {
+  transform: translateX(0) translateY(0);
+}
+#img-content .content .type {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+  align-items: center;
+  transition: transform 1s;
+  font-size: 1.7rem;
+}
+#img-content .content:hover .type {
+  opacity: 1;
+  transform: translateY(40%);
+}
+.type h1 {
+  color: #fff;
+}
+.type a {
+  font-weight: bold;
+}
+.main .order .alert {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Login formiin heseg */
+#form .log {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #132853;
+}
+#form .log input {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 150px;
+}
+#form .log button {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  width: 50%;
+  margin: auto;
+}
+#form .log .up {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  width: 60%;
+  margin: auto;
+  padding: 1rem;
+}
+#form .log .up:first-child {
+  border-bottom: #3b5998 1px dotted;
+  margin-top: 1rem;
+}
+/* footer heseg */
+#main-footer {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background: #3b5998;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#main-footer p {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* 1000px ees doosh tohoromjid zoriulsan huvilbar */
+@media (max-width: 1000px) {
+  .type h1,
+  .type a {
+    font-size: 1.8rem;
+  }
+  .main .Text-content .text ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #main-header .head {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  #main-header .head .social-icon ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  #img-content .contents {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 1rem;
+  }
+  #main-footer p {
+    font-size: 1.7rem;
+  }
+}
