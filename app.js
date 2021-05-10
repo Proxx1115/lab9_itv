@@ -80,7 +80,8 @@ function pay(n){
 }
 
 function toloh(){
-    alert("Та " + currentPrice + " төгрөгний төлбөрөө амжилттай хийлээ.")
+    alert("Та " + currentPrice + " төгрөгний төлбөрөө амжилттай хийлээ.");
+    currentPrice = 0;
     end();
 }
 
